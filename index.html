@@ -4,152 +4,151 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="estilo.css">
   <title>Comandos GIT hub</title>
 </head>
 <body>
   
     <h1>Comandos GIT hub</h1>
-
-    <table border="1" cellpadding="3" cellspacing="0" id="fechayhora">
-      <tr style="background-color: rgb(204, 204, 204);">
-        <td><b>Comando</b></td>
-        <td><b>Significado</b></td>
-        <td><b>Tarea</b></td>
-        <td><b>Sintáxis</b></td>
-      </tr>
-      <tr>
-        <td><b>pwd</b></td>
-        <td>present working directory</td>
-        <td>Nos advierte en que carpeta nos encontramos trabajando</td>
-        <td>pwd</td>
-      </tr>
-      <tr>
-        <td><b>mkdir</b></td>
-        <td>make dir</td>
-        <td>Crea carpeta en el directorio donde nos encontramos actualmente</td>
-        <td>mkdir nuevoDirectorio</td>
-      </tr>
-      <tr>
-        <td><b>rmdir</b></td>
-        <td>make dir</td>
-        <td>Elimina directorios de la carpeta en que estamos posicionados</td>
-        <td>rmdir directorio</td>
-      </tr>
-      <tr>
-        <td><b>cd</b></td>
-        <td>change directory</td>
-        <td>Nos posiciona en otro directorio de trabajo</td>
-        <td>cd nombreDeCarpeta</td>
-      </tr>
-      <tr>
-        <td><b>ls</b></td>
-        <td>list</td>
-        <td>Lista de todos los archivos y carpetas en la carpeta donde estamos posicionados</td>
-        <td>ls</td>
-      </tr>
-      <tr>
-        <td><b>mv</b></td>
-        <td>move</td>
-        <td>Mueve el archivo de un fichero a otro y/o lo renombra</td>
-        <td>mv nombre_archivo_original.ext /posible_nueva_carpeta/cambio_nombre_archivo_opcional.ext</td>
-      </tr>
-      <tr>
-        <td><b>cp</b></td>
-        <td>copy</td>
-        <td>Copia un archivo y deja el original intacto</td>
-        <td>cp notas.ext notas-copia.ext</td>
-      </tr>
-      <tr>
-        <td><b>rm</b></td>
-        <td>remove</td>
-        <td>Elimina un archivo o directorio definitivamente de nuestro entorno</td>
-        <td>rm archivo_a_remover.ext</td>
-      </tr>
-      <tr>
-        <td><b>Staging</b></td>
-        <td>Staging</td>
-        <td>Nos muestra la lista de archivos a subir en el pr&oacute;ximo commit</td>
-        <td>n/a</td>
-      </tr>
-      <tr>
-        <td><b>git init</b></td>
-        <td>git init</td>
-        <td>Inicia GIT con los archivos modificados, historial, etc</td>
-        <td>git init</td>
-      </tr>
-      <tr>
-        <td><b>git commit</b></td>
-        <td>git commit</td>
-        <td>Ejecuta los cambios que hicimos. Con 'git commit -m ""', agregamos un mansaje dentro de las comillas</td>
-        <td>git commit / git commit -m "mensaje"</td>
-      </tr>
-      <tr>
-        <td><b>git status</b></td>
-        <td>git status</td>
-        <td>Nos muestra los archivos que se encuentran en staging o los pendientes a agregar a staging</td>
-        <td>git status</td>
-      </tr>
-      <tr>
-        <td><b>git add</b></td>
-        <td>git add</td>
-        <td>Agrega un archivo al repositorio. Al ejecutar 'git add .' agrega todos los archivos pendientes al repositorio</td>
-        <td>git add archivo.ext / git add .</td>
-      </tr>
-      <tr>
-        <td><b>git diff</b></td>
-        <td>git diff</td>
-        <td>Nos indica exactamente que cambios se hicieron en un archivo</td>
-        <td>git diff</td>
-      </tr>
-      <tr>
-        <td><b>git checkout</b></td>
-        <td>git checkout</td>
-        <td>Deshace los cambios que vemos desde git diff. Con el punto final se deshacen los cambios de todos los archivos. Reemplazando el punto con el número de revisión, nos trasladamos a una versión anterior del proyecto, por lo que cualquier cambio aquí puede hacernos perder información. Antes de hacer cambios debemos volver a la revisión más actual con 'git checkout master'</td>
-        <td>git checkout nombre_archivo.ext / git checkout . / git checkout [revision] / git checkout master</td>
-      </tr>
-      <tr>
-        <td><b>git log</b></td>
-        <td>git log</td>
-        <td>Muestra los autores de los cambios realizados en los commit. Con 'git log -p' recopilamos los detalle de la última modificación. Con 'git log -- nombre_archivo.ext' vemos las modificaciones propias de ese archivo</td>
-        <td>git log nombre_archivo.ext / git log . / git log -- nombre_archivo.ext</td>
-      </tr>
-      <tr>
-        <td><b>git branch</b></td>
-        <td>git branch</td>
-        <td>Esto nos permite crear una nueva rama de trabajo en paralelo con el proyecyo actual. Se puede separar diseño, contenido, etc. Con -d eliminamos la nueva rama</td>
-        <td>git branch nombre_de_la_nueva_rama / git branch -d nombre_de_la_rama</td>
-      </tr>
-      <tr>
-        <td><b>git merge</b></td>
-        <td>git merge</td>
-        <td>Une los cambios de las dos ramas desde el momento de bifuración hasta el momento</td>
-        <td>git merge nombre_de_la_rama</td>
-      </tr>
-      <tr>
-        <td><b>git clone</b></td>
-        <td>git clone</td>
-        <td>Clona repositorios locales o por url</td>
-        <td>git clone archivo_o_url</td>
-      </tr>
-      <tr>
-        <td><b>git remote add origin</b></td>
-        <td>git remote add origin</td>
-        <td>Descarga los repositorios a través de una url</td>
-        <td>git remote add origin nombre_de_la_rama</td>
-      </tr>
-      <tr>
-        <td><b>git pull</b></td>
-        <td>git pull</td>
-        <td>Descarga ficheros a nuestra versión</td>
-        <td>git pull archivo_o_url</td>
-      </tr>
-      <tr>
-        <td><b>git push</b></td>
-        <td>git push</td>
-        <td>Sube los ficheros modificados a un servidor o local</td>
-        <td>git push archivo_o_url</td>
-      </tr>
-    </table>
+    
+    <ul id="headUl">
+      <li><b>Comando</b></li>
+      <li><b>Significado</b></li>
+      <li><b>Tarea</b></li>
+      <li><b>Sintáxis</b></li>
+    </ul>
+    <ul>
+      <li><b>pwd</b></li>
+      <li>present working directory</li>
+      <li>Nos advierte en que carpeta nos encontramos trabajando</li>
+      <li>pwd</li>
+    </ul>
+    <ul>
+      <li><b>mkdir</b></li>
+      <li>make dir</li>
+      <li>Crea carpeta en el directorio donde nos encontramos actualmente</li>
+      <li>mkdir nuevoDirectorio</li>
+    </ul>
+    <ul>
+      <li><b>rmdir</b></li>
+      <li>make dir</li>
+      <li>Elimina directorios de la carpeta en que estamos posicionados</li>
+      <li>rmdir directorio</li>
+    </ul>
+    <ul>
+      <li><b>cd</b></li>
+      <li>change directory</li>
+      <li>Nos posiciona en otro directorio de trabajo</li>
+      <li>cd nombreDeCarpeta</li>
+    </ul>
+    <ul>
+      <li><b>ls</b></li>
+      <li>list</li>
+      <li>Lista de todos los archivos y carpetas en la carpeta donde estamos posicionados</li>
+      <li>ls</li>
+    </ul>
+    <ul>
+      <li><b>mv</b></li>
+      <li>move</li>
+      <li>Mueve el archivo de un fichero a otro y/o lo renombra</li>
+      <li>mv nombre_archivo_original.ext /posible_nueva_carpeta/cambio_nombre_archivo_opcional.ext</li>
+    </ul>
+    <ul>
+      <li><b>cp</b></li>
+      <li>copy</li>
+      <li>Copia un archivo y deja el original intacto</li>
+      <li>cp notas.ext notas-copia.ext</li>
+    </ul>
+    <ul>
+      <li><b>rm</b></li>
+      <li>remove</li>
+      <li>Elimina un archivo o directorio definitivamente de nuestro entorno</li>
+      <li>rm archivo_a_remover.ext</li>
+    </ul>
+    <ul>
+      <li><b>Staging</b></li>
+      <li>Staging</li>
+      <li>Nos muestra la lista de archivos a subir en el pr&oacute;ximo commit</li>
+      <li>n/a</li>
+    </ul>
+    <ul>
+      <li><b>git init</b></li>
+      <li>git init</li>
+      <li>Inicia GIT con los archivos modificados, historial, etc</li>
+      <li>git init</li>
+    </ul>
+    <ul>
+      <li><b>git commit</b></li>
+      <li>git commit</li>
+      <li>Ejecuta los cambios que hicimos. Con 'git commit -m ""', agregamos un mansaje dentro de las comillas</li>
+      <li>git commit / git commit -m "mensaje"</li>
+    </ul>
+    <ul>
+      <li><b>git status</b></li>
+      <li>git status</li>
+      <li>Nos muestra los archivos que se encuentran en staging o los pendientes a agregar a staging</li>
+      <li>git status</li>
+    </ul>
+    <ul>
+      <li><b>git add</b></li>
+      <li>git add</li>
+      <li>Agrega un archivo al repositorio. Al ejecutar 'git add .' agrega todos los archivos pendientes al repositorio</li>
+      <li>git add archivo.ext / git add .</li>
+    </ul>
+    <ul>
+      <li><b>git diff</b></li>
+      <li>git diff</li>
+      <li>Nos indica exactamente que cambios se hicieron en un archivo</li>
+      <li>git diff</li>
+    </ul>
+    <ul>
+      <li><b>git checkout</b></li>
+      <li>git checkout</li>
+      <li>Deshace los cambios que vemos desde git diff. Con el punto final se deshacen los cambios de todos los archivos. Reemplazando el punto con el número de revisión, nos trasladamos a una versión anterior del proyecto, por lo que cualquier cambio aquí puede hacernos perder información. Antes de hacer cambios debemos volver a la revisión más actual con 'git checkout master'</li>
+      <li>git checkout nombre_archivo.ext / git checkout . / git checkout [revision] / git checkout master</li>
+    </ul>
+    <ul>
+      <li><b>git log</b></li>
+      <li>git log</li>
+      <li>Muestra los autores de los cambios realizados en los commit. Con 'git log -p' recopilamos los detalle de la última modificación. Con 'git log -- nombre_archivo.ext' vemos las modificaciones propias de ese archivo</li>
+      <li>git log nombre_archivo.ext / git log . / git log -- nombre_archivo.ext</li>
+    </ul>
+    <ul>
+      <li><b>git branch</b></li>
+      <li>git branch</li>
+      <li>Esto nos permite crear una nueva rama de trabajo en paralelo con el proyecyo actual. Se puede separar diseño, contenido, etc. Con -d eliminamos la nueva rama</li>
+      <li>git branch nombre_de_la_nueva_rama / git branch -d nombre_de_la_rama</li>
+    </ul>
+    <ul>
+      <li><b>git merge</b></li>
+      <li>git merge</li>
+      <li>Une los cambios de las dos ramas desde el momento de bifuración hasta el momento</li>
+      <li>git merge nombre_de_la_rama</li>
+    </ul>
+    <ul>
+      <li><b>git clone</b></li>
+      <li>git clone</li>
+      <li>Clona repositorios locales o por url</li>
+      <li>git clone archivo_o_url</li>
+    </ul>
+    <ul>
+      <li><b>git remote add origin</b></li>
+      <li>git remote add origin</li>
+      <li>Descarga los repositorios a través de una url</li>
+      <li>git remote add origin nombre_de_la_rama</li>
+    </ul>
+    <ul>
+      <li><b>git pull</b></li>
+      <li>git pull</li>
+      <li>Descarga ficheros a nuestra versión</li>
+      <li>git pull archivo_o_url</li>
+    </ul>
+    <ul>
+      <li><b>git push</b></li>
+      <li>git push</li>
+      <li>Sube los ficheros modificados a un servidor o local</li>
+      <li>git push archivo_o_url</li>
+    </ul>
   
   </body>
 </html>

@@ -1,21 +1,39 @@
-html {
+* {
   padding: 0;
   margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
   color: #363635;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1 {
+  width: 90%;
+  margin: 0 auto;
+  padding: 3% 0;
+  font-weight: normal;
 }
 
 ul {
-  width: 98%;
+  width: 90%;
   margin: 0 auto;
   border: 2px solid #515a47;
+  clear: both;
 }
-ul li.headLi {
-  background-color: #253031;
+ul li {
+  width: 25%;
+  float: left;
+  list-style-type: none;
+  text-align: center;
+  padding: 2% 0;
+}
+ul li.liPar {
+  background-color: #595A4A;
 }
 
-li.liPar {
-  background-color: #595A4A;
+ul#headUl {
+  background-color: #253031;
 }
